@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
 
+
+// General app styles
 html,
 body {
   padding: 0;
@@ -18,3 +20,53 @@ a {
   box-sizing: border-box;
 }
 
+// Navigation styles
+.nav{
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #0FA958;
+}
+.logo{
+  font-family: 'Lobster', cursive;
+  color: #0FA958;
+  font-size: 30px;
+}
+.responsive{
+  position: absolute;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 3;
+  border: 1px solid #0FA958;
+  width: 99%;
+  height: 120px;
+  margin: -9px;
+  padding: 10px;
+}
+.menu{
+  display: none;
+}
+.icon{
+  font-size: 40px;
+  color: #0FA958;
+}
+// For larger devices
+@media screen and (min-width: 600px) {
+  .icon{
+    display: none;
+  }
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    height: 50px;
+    width: 600px;
+    border: none;
+  }
+}

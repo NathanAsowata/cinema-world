@@ -8,8 +8,6 @@ const Home = () => {
         <title>Cinema World</title>
         <link rel="icon" href="logo.png" />
       </Head>
-      <h1>Cinema World</h1>
-      <a href="#">A tested link</a>
     </>
   )
 }
