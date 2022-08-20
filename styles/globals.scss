@@ -61,6 +61,7 @@ a {
   .menu{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     position: relative;
     top: 0px;
