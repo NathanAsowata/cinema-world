@@ -1,5 +1,6 @@
 // CSS styles for this component can be found in ./styles/globals.scss file
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useState } from 'react'
 import { HiMenu } from 'react-icons/hi'
 
@@ -28,9 +29,15 @@ const Navigation = () => {
         }
     }
 
+    // When the user clicks the logo
+    const router = useRouter()
+    const goToHomePage = () => {
+        router.push('/')
+    }
+
   return (
     <nav className='nav'>
-        <span className='logo'>Cinema World</span>
+        <span className='logo' onClick={goToHomePage}>Cinema World</span>
         <span className={newClass}>
             <Link href={'#'}>
                 <a>Home</a>

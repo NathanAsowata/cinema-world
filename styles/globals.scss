@@ -20,6 +20,7 @@ a {
   box-sizing: border-box;
 }
 
+
 // Navigation styles
 .nav{
   padding: 5px 10px;
@@ -27,6 +28,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 1px solid #0FA958;
+  cursor: pointer;
 }
 .logo{
   font-family: 'Lobster', cursive;
