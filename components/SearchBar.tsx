@@ -1,13 +1,16 @@
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { FormEvent, useState } from 'react'
 import styles from '../styles/SearchBar.module.scss'
 
 const SearchBar = () => {
 
     const [userInput, setUserInput] = useState("")
     const router = useRouter()
-    const submitSearchQuery = () => {
-        router.push(`/search/${userInput}`)
+    
+    // Submit search query
+    const submitSearchQuery = (e:FormEvent) => {
+      e.preventDefault()  
+      router.push(`/search/${userInput}`)
     }
 
   return (

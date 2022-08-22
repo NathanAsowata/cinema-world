@@ -39,17 +39,17 @@ const Navigation = () => {
     <nav className='nav'>
         <span className='logo' onClick={goToHomePage}>Cinema World</span>
         <span className={newClass}>
-            <Link href={'#'}>
+            <Link href={'/'}>
                 <a>Home</a>
             </Link>
-            <Link href={'#'}>
+            <Link href={'/search/'}>
                 <a>Search</a>
             </Link>
-            <Link href={'#'}>
+            <Link href={'/popular/'}>
                 <a>Popular Movies</a>
             </Link>
-            <Link href={'#'}>
-                <a>Popular TV Shows</a>
+            <Link href={'/toprated'}>
+                <a>Top Rated Movies</a>
             </Link>
         </span>
         <HiMenu className='icon' onClick={displayMenu} />

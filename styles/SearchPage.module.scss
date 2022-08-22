@@ -1,0 +1,19 @@
+.container{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.results{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.title{
+    margin-top: 100px;
+    text-align: center;
+    height: 90vh;
+    font-weight: 400;
+}
