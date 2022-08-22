@@ -1,23 +1,20 @@
 import MovieCard from "../components/MovieCard";
 import {screen, render} from '@testing-library/react'
 
-describe('Movie card test suite', () =>{
-    it('should display movie poster image', () => { 
-        // Get movie card component
-        const Movie = render(<MovieCard />)
-        
-        // Get movie poster image
-        const posterImage = screen.getByRole('img')
+const movie = {
+    id: 1,
+    poster_path: '/posterImage.png',
+    title: 'Gray Man',
+    vote_average: 7.5
+  }
 
-        // Expect poster image to be visible
-        expect(posterImage).toBeVisible()
-    })
+describe('Movie card test suite', () =>{
     it('should display movie title', () => {
         // Get movie card component
-        const Movie = render(<MovieCard />)
+        const Movie = render(<MovieCard movie={movie} />)
 
         // Get movie title
-        const title = screen.getByText('Luca')
+        const title = screen.getByText('Gray Man')
 
         // Expect movie title to be visible
         expect(title).toBeVisible()

@@ -6,7 +6,8 @@ interface propTypes {
 }
 
 const Stars = ({rating}: propTypes) => {
-    const stars = Math.round(rating)
+    const movieRating = rating/2
+    const stars = Math.round(movieRating)
 
     if (stars === 1) {
         return (
