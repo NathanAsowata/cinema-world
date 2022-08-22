@@ -48,8 +48,8 @@ const Navigation = () => {
             <Link href={'/popular/'}>
                 <a>Popular Movies</a>
             </Link>
-            <Link href={'/popular/tv'}>
-                <a>Popular TV Shows</a>
+            <Link href={'/toprated'}>
+                <a>Top Rated Movies</a>
             </Link>
         </span>
         <HiMenu className='icon' onClick={displayMenu} />
