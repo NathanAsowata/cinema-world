@@ -13,3 +13,9 @@
         text-shadow: 2px 2px black;
     }
 }
+.trendingSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
