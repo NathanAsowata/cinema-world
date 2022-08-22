@@ -1,6 +1,7 @@
 import SearchBar from '../../components/SearchBar'
 import MovieCard from '../../components/MovieCard'
 import styles from '../../styles/SearchPage.module.scss'
+import Head from 'next/head'
 
 
 interface propTypes {
@@ -14,14 +15,20 @@ interface propTypes {
 
 const SearchPage = ({searchResults}: propTypes) => {
     return(
-        <main className={styles.container}>
-            <SearchBar />
-            <section className={styles.results}>
-                {searchResults.map(movie => {
-                    return <MovieCard movie={movie} key={movie.id} />
-                })}
-            </section>
-        </main>
+        <>
+        <Head>
+            <title> Search</title>
+            <link rel="icon" href="logo.png" />
+        </Head>
+            <main className={styles.container}>
+                <SearchBar />
+                <section className={styles.results}>
+                    {searchResults.map(movie => {
+                        return <MovieCard movie={movie} key={movie.id} />
+                    })}
+                </section>
+            </main>
+        </>
     )
 }
 
