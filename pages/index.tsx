@@ -32,6 +32,7 @@ const Home = ({movies}:propTypes) => {
         <h1>Explore millions of movies and TV shows</h1>
         <SearchBar />
       </header>
+      <h1 className={styles.subHeading}>Trending Movies</h1>
       <section className={styles.trendingSection}>
         {movies ? movies.map(movie => {
           return(
