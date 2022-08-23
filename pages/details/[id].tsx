@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Image from "next/image"
 import Stars from "../../components/Stars"
+import styles from '../../styles/Details.module.scss'
 
 
 interface propTypes {
@@ -33,7 +34,6 @@ const Details = ({details}:propTypes) => {
                 <title>Movie Details</title>
                 <link rel="icon" href="logo.png" />
             </Head>
-            <main>
                 <Image 
                     src={`https://image.tmdb.org/t/p/original/${details.backdrop_path}`}
                     alt={details.original_title}
@@ -41,15 +41,16 @@ const Details = ({details}:propTypes) => {
                     height={200}
                     layout={'responsive'}
                 />
-                <h1>{details.original_title}</h1>
-                <Stars rating={details.vote_average} />
-                <div>
-                    <span>{details.vote_count.toLocaleString()} Reviews </span> |
-                    <span> {details.runtime} mins</span> |
-                    <span> {details.status}</span>
-                </div>
-                <p><strong>Storyline</strong> - {details.overview}</p>
-            </main>
+                <main className={styles.container}>
+                    <h1>{details.original_title}</h1>
+                    <Stars rating={details.vote_average} />
+                    <div>
+                        <span>{details.vote_count.toLocaleString()} Reviews </span> |
+                        <span> {details.runtime} mins</span> |
+                        <span> {details.status}</span>
+                    </div>
+                    <p><strong>Storyline</strong> - {details.overview}</p>
+                </main>
         </>
     )
 }
