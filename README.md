@@ -8,11 +8,11 @@ My goal was to simulate a professional working environment
 
 
 ## How to navigate this project
-* components folder contains the code for each component.
-* pages folder contains the code for each page.
-* public folder contains the images I used for this project.
-* styles folder contains the styling for each page and component.
-* tests folder contains all the tests I wrote for this project.
+* `components` folder contains the code for each component.
+* `pages` folder contains the code for each page.
+* `public` folder contains the images I used for this project.
+* `styles` folder contains the styling for each page and component.
+* `tests` folder contains all the tests I wrote for this project.
 
 ## Why I built this project this way
 * NextJS helps me build React applications safer and faster
@@ -25,6 +25,6 @@ My goal was to simulate a professional working environment
 * I would add a feature for TV shows
 
 ## Available Scripts
-npm run dev - To start development server.
-npm run start - To start app in production mode.
-npm run tests - To run tests
+* `npm run dev` - To start development server.
+* `npm run start` - To start app in production mode.
+* `npm run tests` - To run tests
