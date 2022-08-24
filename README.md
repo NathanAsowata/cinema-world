@@ -21,7 +21,7 @@ My goal was to simulate a professional working environment
 * I also wrote tests for the essential components of this project.
 
 ## If I had more time I would change this
-* I would improve the design of the movie details page 
+* I would add a feature to show similar movies
 * I would add a feature for TV shows
 
 ## Available Scripts
