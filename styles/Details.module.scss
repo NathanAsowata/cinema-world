@@ -1,7 +1,46 @@
-.container{
-    color: #0fa958;
-    padding:0 50px;
-    h1, p, span{
-        color: white;
+.heroContent{
+    padding: 5px 5px 10px 50px;
+    border-bottom: 1px solid #0fa958;
+    background-color: black;
+
+    p{
+        max-width: 600px;
+        margin: 2px;
+        font-size: 18px;
+    }
+}
+.subheading{
+    margin: 50px 40px 10px;
+}
+.main{
+    line-height: 5px;
+    margin-left: 40px;
+}
+.name{
+    font-weight: bold;
+    color: #999;
+}
+// For larger screens
+@media screen and (min-width: 600px) {
+    .heroImage{
+        filter: brightness(50%);
+    }
+    .heroContent{
+        position: absolute;
+        top: 40%;
+        text-shadow: 2px 2px black;
+        background-color: transparent;
+        border: none;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 250px 500px 500px;
+        gap: 50px;
+        padding-left: 40px;
+        margin-top: 20px;
+        line-height: 4px;
+    }
+    .details{
+        margin-left: 150px;
     }
 }

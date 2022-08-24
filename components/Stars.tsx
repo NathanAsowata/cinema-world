@@ -1,6 +1,5 @@
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
 
-
 interface propTypes {
     rating: number
 }
