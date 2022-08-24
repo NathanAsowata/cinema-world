@@ -1,7 +1,7 @@
 ## How I worked on this project
 My goal was to simulate a professional working environment
 
-* I built this app using designs I created with Figma: (Link to the designs)[https://www.figma.com/file/fRRcaBBNtog4134UGnujhQ/Cinema-World?node-id=0%3A1]  
+* I built this app using designs I created with Figma: (Link to the Figma Design)[https://www.figma.com/file/fRRcaBBNtog4134UGnujhQ/Cinema-World?node-id=0%3A1]  
 * I used feature branches and pull requests
 * I followed tasks on this Kanban board 
 ![image](https://user-images.githubusercontent.com/90692293/186263549-2794af63-29a3-4127-9a9d-abc06f51a17e.png)
